@@ -201,7 +201,6 @@ namespace Sakk
             {
                 for (int j = 0; j < 8; j++)
                 {
-
                     picutvonal = "";
 
                     if (sakktabla[i, j].CompareTo("vgyalog") == 0)
