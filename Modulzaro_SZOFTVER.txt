@@ -1,0 +1,31 @@
+Készítsen grafikus felületû alkalmazást, amely a következõkben leírtak megvalósítására alkalmas:
+
+1. A megjelenõ form felületén láthatóvá tesz egy szabályos sakktáblát
+(8x8 egyforma mezõbõl áll, összességében négyzet alakú és a mezõk soronként asszimetrikusan sötét és világos, valamint világos és sötét színekben lesznek láthatók)
+
+2. A sakkjáték figurái (gyalog, bástya, huszár, futó, vezér, király) közül, egyidejûleg legalább egyet a tábla egy véletlenül kiválasztott mezõjén megjelenít
+(a figura lehet stilizált, tehát rajzként megjelenõ, de lehet képet használva is biztosítani a megjelenítést; a program egy figurát képes kell legyen kezeljen, de nyilván mind a 6-ot is ismerheti, ami így nemcsak a pozíció, hanem a figura választás véletlen alapon történõ megvalósítását is jelenti; de az is lehetséges, hogy más-más pozíciókba, egyidejûleg több, akár mind a 6 figura is felkerülhet) 
+
+3. A felhasználó számára interaktív lehetõséget biztosít, hogy a figurát, annak lépési szabályát ismerve a tábla egy másik mezõjére mozgassa
+(a figurák lépéseinek szabályai:
+gyalog - általában a tábla teteje felé függõlegesen 1 mezõnyit léphet, de, ha a tábla alulról számított 2. sorában áll, akkor 2 mezõnyit is léphet függõlegesen, abban az esetben, ha van tetszõleges figura a gyalog pozícióját jelentõ mezõhöz képest jobbra, vagy balra, átlósan fölfelé elhelyezkedõen, a tartózkodási hellyel sarkosan illeszkedõ pozícióban, akkor az ott tartózkodó figura leütésével /eltüntetésével/ oda is kerülhet a gyalog új pozíciója
+
+bástya - jobbra és balra vízszintesen, fölfele és lefelé függõlegesen tetszõleges számú mezõt léphet, feltéve, hogy nem állja útját egy leüthetõ figura, ugyanis ilyenkor a lépés hossza csak addig terjedhet
+
+huszár - L alakban léphet, vagyis függõlegesen, fölfelé, vagy lefelé 2 vagy 1 mezõt, majd jobbra, vagy balra, abban az esetben, ha két mezõt mozdult egyet, ha egyet, akkor pedig kettõt, nyilván itt is szemelõtt tartva, hogy ütésre is sor kerülhet, azonban csak akkor, ha a lépés végpontjában van a másik figura
+
+futó - csak átlósan mozoghat jobbra és balra föl vagy épp lefelé, természetesen figyelve arra, hogy egy másik figura ütésekor a mozgása csak addig terjedhet
+
+vezér - függõlegesen és vízszintesen, fölfelé és lefelé, valamint jobbra és balra, továbbá átlósan is, szintén fölefelé és lefelé, de figyelembe véve, hogy a lépéshossz a mozgásakor egy esetleg annak irányában elhelyezkedõ másik figura által, legfeljebb annak pozíciójáig terjed
+
+király - függõlegesen és vízszintesen, fölfelé és lefelé, továbbá átlósan is, egy-egy mezõt léphet és a lépés céljában elhelyezkedõ másik  figurát ráadásul még le is ütheti
+
+Az imént leírtakban az egyéb figurák kizárólag arra az esetre vonatkoznak, ha a táblán több bábut is szerepeltetne
+
+Az interaktivitás megvalósítása tetszõlegesen történhet. Tehát adatbevitellel, a billentyûzetrõl, megfelelõ vezérlõk használatával épp úgy, mint a grafikus elem drag&drop, közvetlen egérrel végrehajtott mozgatásával. Fontos, hogy a figura vegye fel az új pozíciót, ha az korrekt, illetve maradjon a helyén, de a felhasználót természetesen valamilyen formában tájékoztatva, ha az adott pozícióba, a tartózkodási helyérõl nem kerülhet)
+
+
+Leadási határidõ: 2021. május 2. 23:59:59
+(*.zip)
+
+
